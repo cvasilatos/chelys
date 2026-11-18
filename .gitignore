@@ -1,0 +1,13 @@
+# Built docs site
+site/
+
+# Never commit machine-specific or private settings.
+# Personal config belongs in ~/.zshrc.local (outside this repo); see zshrc.local.example.
+*.local
+.env
+.env.*
+*.pem
+*.key
+id_*
+.zsh_history
+.ssh/

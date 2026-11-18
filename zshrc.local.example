@@ -1,0 +1,24 @@
+# ~/.zshrc.local - settings for THIS machine only.
+#
+# This file lives in your home folder, not in the repo, so it is never committed
+# or shared. Put anything private or machine-specific here: work paths, API keys,
+# server names, cluster/GPU settings, aliases for one host.
+#
+#   cp ~/chelys/zshrc.local.example ~/.zshrc.local
+#
+# It is loaded last by zshrc, so it can override anything.
+
+# --- PATH additions -----------------------------------------------------------
+# export PATH="/usr/local/cuda/bin:$PATH"
+
+# --- Secrets (keep them here, never in the repo) ------------------------------
+# export OPENAI_API_KEY="..."
+# export HF_TOKEN="..."
+
+# --- Tools that need initialising ---------------------------------------------
+# [ -f ~/miniconda3/etc/profile.d/conda.sh ] && source ~/miniconda3/etc/profile.d/conda.sh
+# command -v pyenv >/dev/null && eval "$(pyenv init -)"
+
+# --- Machine-specific aliases --------------------------------------------------
+# alias gpu='watch -n1 nvidia-smi'
+# alias proj='cd ~/work/my-project'
